@@ -8,11 +8,12 @@ namespace MVC5WEB.Controllers
 {
     public class HomeController : Controller
     {
+       // [MyLoggingFilter]
         public ActionResult Index()
         {
             return View();
         }
-
+        [ActionName("Test")]
         public ActionResult About()
         {
             ViewBag.Message = "To jest stronka w MVC5!!!!";
